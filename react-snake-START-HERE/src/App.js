@@ -26,9 +26,8 @@ const App = () => {
 
   }
 
-  const moveSnake = () => {
-
-  }
+  const moveSnake = ({ keyCode }) =>  
+    keyCode >= 37 && keyCode <= 40 && setDir(DIRECTIONS[keyCode]);
 
   const createApple = () =>{
 
