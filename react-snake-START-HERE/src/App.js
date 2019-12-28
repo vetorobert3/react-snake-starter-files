@@ -27,7 +27,8 @@ const App = () => {
   }
 
   const endGame = () => {
-
+    setSpeed(null);
+    setGameOver(true);
   }
 
   const moveSnake = ({ keyCode }) =>  
